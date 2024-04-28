@@ -1,16 +1,72 @@
-.boxes.active {
+.container {
     display: grid;
-    gap: 1px;
-    border: 1px white solid;
+    /* border: 1px white solid; */
 }
 
 .box {
-    /* width: 50px;
-    height: 50px; */
     background-color: gray;
+    border: white 1px solid;
+    font-size: 1.5rem;
 }
 
-.boxes.active.test {
-    grid-template-rows: repeat(3, 1fr);
+.container.column-fixed {
+    grid-template-columns: 200px 200px;
+}
+.container.column-flexible {
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.container.row-fixed {
+    grid-template-rows: 100px 70px 50px;
+}
+.container.row-flexible {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+.container.row-column {
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 1fr 100px;
+}
+
+.container.areas {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "first first second"
+        "first first ."
+        "third third third";
+}
+
+.container.areas .box-1 {
+    grid-area: first;
+}
+.container.areas .box-2 {
+    grid-area: second;
+}
+.container.areas .box-3 {
+    grid-area: third;
+}
+
+.container.align {
+    grid-template-rows: repeat(2, 60px);
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+}
+
+.container.align .box {
+    border: 1px orange solid;
+    display: grid;
+}
+.container.align .box div {
+    border: 1px blue solid;
+}
+.container.align .box-1 div {
+    align-self: start;
+}
+.container.align .box-2 div {
+    align-self: end;
+}
+.container.align .box-3 div{
+    align-self: center;
+}
+.container.align .box-4 div{
+    align-self: stretch;
 }
