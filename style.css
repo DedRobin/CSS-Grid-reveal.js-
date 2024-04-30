@@ -45,15 +45,17 @@
     grid-area: third;
 }
 
-.container.align {
-    grid-template-rows: repeat(2, 60px);
+.container.align,
+.container.horizontal {
+    grid-template-rows: repeat(2, 100px);
     grid-template-columns: repeat(2, 1fr);
     align-items: stretch;
 }
 
 .container.align .box {
-    border: 1px orange solid;
+    border: 3px orange solid;
     display: grid;
+    padding: 5px;
 }
 .container.align .box div {
     border: 1px blue solid;
@@ -64,9 +66,30 @@
 .container.align .box-2 div {
     align-self: end;
 }
-.container.align .box-3 div{
+.container.align .box-3 div {
     align-self: center;
 }
-.container.align .box-4 div{
+.container.align .box-4 div {
     align-self: stretch;
+}
+
+.container.horizontal .box {
+    border: 3px orange solid;
+    display: grid;
+    padding: 5px;
+}
+.container.horizontal .box div {
+    border: 1px blue solid;
+}
+.container.horizontal .box-1 div {
+    justify-self: start;
+}
+.container.horizontal .box-2 div {
+    justify-self: end;
+}
+.container.horizontal .box-3 div {
+    justify-self: center;
+}
+.container.horizontal .box-4 div {
+    justify-self: stretch;
 }
