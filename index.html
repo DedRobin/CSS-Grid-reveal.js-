@@ -251,7 +251,10 @@
               <div class="box box-3">box-6 (height=content)</div>
             </div>
             <!-- Note -->
-            <aside class="notes">Empty</aside>
+            <aside class="notes">
+              For example we use this function to repeat size for four rows equel to 50px insted of writing the '50px'
+              four times. It will be uncomportable.
+            </aside>
           </section>
           <section class="slide-3-8" style="font-size: 1.5rem">
             <div>2-8. Areas</div>
@@ -282,11 +285,12 @@
             <aside class="notes">
               There is another way to place containers. It's grid-template-areas that specifies named grid areas. We
               create template with names of containers and we apply those names in each container that placed within
-              main grid container. As we can see above we named 1,2 columns and 1,2 rows as 'first', then we apply this
-              name for 'box-1' container using property 'grid-area'. It means that container 'box-1' with property
-              'grid-area: first' take up 1,2 columns and 1,2 rows. Container 'box-2' take up only 3 column and 1 row,
-              and we see that 3 column and 2 row is empty. It is because we put dot in this place accoroding to
-              template. And the last container take up whole the third row.
+              main grid container. As we can see above we named the first and the second columns and the first and the
+              second rows as 'first', then we apply this name for 'box-1' container using property 'grid-area'. It means
+              that container 'box-1' with property 'grid-area: first' take up the first and second columns and the first
+              and the second column rows. Container 'box-2' take up only 3 column and 1 row, and we see that the cell
+              placed in the third column and the second row is empty. It is because we put dot in this place accoroding
+              to template. And the last container take up whole the third row.
             </aside>
           </section>
           <section class="slide-3-9" style="font-size: 1.5rem">
