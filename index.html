@@ -1,263 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <title>reveal.js</title>
+    <title>reveal.js</title>
 
-        <link rel="stylesheet" href="dist/reset.css" />
-        <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/black.css" />
-        <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section class="slide-1">
-                    <h1>CSS Grid Layout</h1>
-                    <div>
-                        Speaker: Pavel Rabekin<br /><a href="https://github.com/DedRobin" target="_blank"
-                            >https://github.com/DedRobin</a
-                        >
-                    </div>
-                    <!-- Note -->
-                    <aside class="notes">
-                        Hello everybode! My name is Pavel, I'm student at RSSchool. I'm going to tell us about one of
-                        fascinating and powerful CSS tools. We've already had the similar one like Flex containers. But
-                        today we'll know about another one. So let's get started.
-                    </aside>
-                </section>
-                <section class="slide-2">
-                    <h2>1. Introduction</h2>
-                    <section class="slide-2-1" data-auto-animate>
-                        <!-- Note -->
-                        <aside class="notes">
-                            Grid is a powerful layout system that allows developers to create complex and responsive web
-                            designs. It provides a more efficient way to structure web pages compared to traditional
-                            methods like flexboxes.
-                        </aside>
-                    </section>
-                    <section class="slide-2-2" data-auto-animate>
-                        <ul>
-                            Advantages
-                            <li>create the complex maket with fewer lines of code</li>
-                        </ul>
-                        <!-- Note -->
-                        <aside class="notes">
-                            One of the main advantages of CSS Grid is its ability to create complex layouts with fewer
-                            lines of code.
-                        </aside>
-                    </section>
-                    <section class="slide-2-3" data-auto-animate>
-                        <ul>
-                            Advantages
-                            <li>create the complex maket with fewer lines of code</li>
-                            <li>control the placement of elements</li>
-                        </ul>
-                        <!-- Note -->
-                        <aside class="notes">
-                            It also allows you to better control the placement of elements on the page. You can place
-                            block in any place you wish inside the grid.
-                        </aside>
-                    </section>
-                    <section class="slide-2-3" data-auto-animate>
-                        <ul>
-                            Disadvantage
-                            <li>compatibility with older browsers</li>
-                        </ul>
-                        <!-- Note -->
-                        <aside class="notes">
-                            However, one disadvantage is that it may not be supported by all older browsers. So it might
-                            requre more testing.
-                        </aside>
-                    </section>
-                </section>
-                <section class="slide-3">
-                    <h2>2. Basic features</h2>
-                    <section class="slide-3-1">
-                        <!-- Note -->
-                        <aside class="notes">Let me show some grid features that are available.</aside>
-                    </section>
-                    <section class="slide-3-2">
-                        <div>2-1. Enable grid behaviour</div>
-                        <pre><code data-trim data-noescape>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="slide-1">
+          <h1>CSS Grid Layout</h1>
+          <div>
+            Speaker: Pavel Rabekin<br /><a href="https://github.com/DedRobin" target="_blank"
+              >https://github.com/DedRobin</a
+            >
+          </div>
+          <!-- Note -->
+          <aside class="notes">
+            Hello everybode! My name is Pavel, I'm student at RSSchool. I'm going to tell us about one of fascinating
+            and powerful CSS tools. We've already had the similar one like Flex containers. But today we'll know about
+            another one. So let's get started.
+          </aside>
+        </section>
+        <section class="slide-2">
+          <h2>1. Introduction</h2>
+          <section class="slide-2-1" data-auto-animate>
+            <!-- Note -->
+            <aside class="notes">
+              Grid is a powerful layout system that allows developers to create complex and responsive web designs. It
+              provides a more efficient way to structure web pages compared to traditional methods like flexboxes.
+            </aside>
+          </section>
+          <section class="slide-2-2" data-auto-animate>
+            <ul>
+              Advantages
+              <li>create the complex maket with fewer lines of code</li>
+            </ul>
+            <!-- Note -->
+            <aside class="notes">
+              One of the main advantages of CSS Grid is its ability to create complex layouts with fewer lines of code.
+            </aside>
+          </section>
+          <section class="slide-2-3" data-auto-animate>
+            <ul>
+              Advantages
+              <li>create the complex maket with fewer lines of code</li>
+              <li>control the placement of elements</li>
+            </ul>
+            <!-- Note -->
+            <aside class="notes">
+              It also allows you to better control the placement of elements on the page. You can place block in any
+              place you wish inside the grid.
+            </aside>
+          </section>
+          <section class="slide-2-3" data-auto-animate>
+            <ul>
+              Disadvantage
+              <li>compatibility with older browsers</li>
+            </ul>
+            <!-- Note -->
+            <aside class="notes">
+              However, one disadvantage is that it may not be supported by all older browsers. So it might requre more
+              testing.
+            </aside>
+          </section>
+        </section>
+        <section class="slide-3">
+          <h2>2. Basic features</h2>
+          <section class="slide-3-1">
+            <!-- Note -->
+            <aside class="notes">Let me show some grid features that are available.</aside>
+          </section>
+          <section class="slide-3-2">
+            <div>2-1. Enable grid behaviour</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                             }
                               </code></pre>
-                        <div class="container">
-                            <div class="box box-1">box-1</div>
-                            <div class="box box-2">box-2</div>
-                            <div class="box box-3">box-3</div>
-                            <div class="box box-4">box-4</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">To enable grid behaviour we define this property (display: grid).</aside>
-                    </section>
-                    <section class="slide-3-3">
-                        <div>2-2. Column placement (fixed size)</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container">
+              <div class="box box-1">box-1</div>
+              <div class="box box-2">box-2</div>
+              <div class="box box-3">box-3</div>
+              <div class="box box-4">box-4</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">Fisrt of all to enable grid behaviour we define this property (display: grid).</aside>
+          </section>
+          <section class="slide-3-3">
+            <div>2-2. Column placement (fixed size)</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                                 grid-template-columns: 200px 200px;
                             }
                               </code></pre>
-                        <div class="container column-fixed">
-                            <div class="box box-1">box-1 (200px)</div>
-                            <div class="box box-2">box-2 (200px)</div>
-                            <div class="box box-3">box-3 (200px)</div>
-                            <div class="box box-4">box-4 (200px)</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            Let's take a look how to place boxes in columns. To do that we use property
-                            'grid-template-columns'. This property accept such sizes as pixels, percents, and another
-                            one new unit - fraction. Column number depends on how many arguments are passed to property.
-                            As we can see boxes are placed in two columns because we pass two sizes. Both columns equel
-                            fixed 200px.
-                        </aside>
-                    </section>
-                    <section class="slide-3-3">
-                        <div>2-3. Column placement (flexible size)</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container column-fixed">
+              <div class="box box-1">box-1 (200px)</div>
+              <div class="box box-2">box-2 (200px)</div>
+              <div class="box box-3">box-3 (200px)</div>
+              <div class="box box-4">box-4 (200px)</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">
+              Let's take a look how to place boxes in columns. To do that we use property 'grid-template-columns'. This
+              property accept such sizes as pixels, percents, and another one new unit - fraction. Column number depends
+              on how many arguments are passed to property. As we can see boxes are placed in two columns because we
+              pass two sizes. Both columns equel fixed 200px.
+            </aside>
+          </section>
+          <section class="slide-3-3">
+            <div>2-3. Column placement (flexible size)</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                                 grid-template-columns: 1fr 1fr 2fr;
                             }
                               </code></pre>
-                        <div class="container column-flexible">
-                            <div class="box box-1">box-1 (1/3)</div>
-                            <div class="box box-2">box-2 (1/3)</div>
-                            <div class="box box-3">box-3 (2/3)</div>
-                            <div class="box box-4">box-4 (1/3)</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            If we want to use flexible size we use units like percent and fraction. In other words if
-                            you pass size 1fr, 1fr and 2 fr, it means the first and the second boxes will be take up 1/3
-                            part of container, and the third one - 2/3.
-                        </aside>
-                    </section>
-                    <section class="slide-3-4">
-                        <div>2-4. Row placement (fixed size)</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container column-flexible">
+              <div class="box box-1">box-1 (1/3)</div>
+              <div class="box box-2">box-2 (1/3)</div>
+              <div class="box box-3">box-3 (2/3)</div>
+              <div class="box box-4">box-4 (1/3)</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">
+              If we want to use flexible size we use units like percent and fraction. In other words if you pass size
+              1fr, 1fr and 2 fr, it means the first and the second boxes will be take up 1/3 part of container, and the
+              third one - 2/3.
+            </aside>
+          </section>
+          <section class="slide-3-4">
+            <div>2-4. Row placement (fixed size)</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                                 grid-template-rows: 100px 70px 50px;
                             }
                               </code></pre>
-                        <div class="container row-fixed">
-                            <div class="box box-1">box-1 (100px)</div>
-                            <div class="box box-2">box-2 (70px)</div>
-                            <div class="box box-3">box-3 (50px)</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            To place boxes in rows we use property 'grid-template-rows'. Units are the same as for
-                            column.
-                        </aside>
-                    </section>
-                    <section class="slide-3-5">
-                        <div>2-5. Row placement (flexible size)</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container row-fixed">
+              <div class="box box-1">box-1 (100px)</div>
+              <div class="box box-2">box-2 (70px)</div>
+              <div class="box box-3">box-3 (50px)</div>
+              <div class="box box-3">box-4 (height depends on content)</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">
+              To place boxes in rows we use property 'grid-template-rows'. Units are the same as for column. As we can
+              see browser create 3 rows according to "grid-template-rows" property. If number of inner boxes more than
+              number of passed argument the hight of rows that are outside of range will depends on its content.
+            </aside>
+          </section>
+          <section class="slide-3-5">
+            <div>2-5. Row placement (flexible size)</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
-                                grid-template-rows: 1fr 2fr;
+                                grid-template-rows: 1fr 2fr 90px;
                             }
                               </code></pre>
-                        <div class="container row-flexible">
-                            <div class="box box-1">box-1 (1/3)</div>
-                            <div class="box box-2">box-2 (1/3)</div>
-                            <div class="box box-3">box-3 (2/3)</div>
-                            <div class="box box-3">box-3 (2/3)</div>
-                            <div class="box box-3">box-3 (1/3)</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">We also can use fixed or flexible size.</aside>
-                    </section>
-                    <section class="slide-3-6">
-                        <div>2-6. Using column and row placement</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container row-flexible">
+              <div class="box box-1">box-1 (1/3)</div>
+              <div class="box box-2">box-2 (1/3)</div>
+              <div class="box box-3">box-3 (90 px)</div>
+              <div class="box box-4" style="font-size: 2rem">box-4 (height depends on content)</div>
+              <div class="box box-5" style="font-size: 3rem">box-5 (height depends on content)</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">We also can use fixed or flexible size.</aside>
+          </section>
+          <section class="slide-3-6">
+            <div>2-6. Using column and row placement</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                                 grid-template-rows: 1fr 2fr;
-                                grid-template-columns: 3fr 1fr 100px;
+                                grid-template-columns: 3fr 1fr 150px;
                                 }
                               </code></pre>
-                        <div class="container row-column">
-                            <div class="box box-1">box-1</div>
-                            <div class="box box-2">box-2</div>
-                            <div class="box box-3">box-3</div>
-                            <div class="box box-3">box-4</div>
-                            <div class="box box-3">box-5</div>
-                            <div class="box box-3">box-6</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            We have opportunity to use both of them to better control placement of elements.
-                        </aside>
-                    </section>
-                    <section class="slide-3-7" data-auto-animate>
-                        <div>2-7. Shortcut for grid templates</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container row-column">
+              <div class="box box-1">box-1 (width=3fr, height=1fr)</div>
+              <div class="box box-2">box-2 (width=1fr, height=1fr)</div>
+              <div class="box box-3">box-3 (width=150px, height=1fr)</div>
+              <div class="box box-4">box-4 (width=1fr, height=2fr)</div>
+              <div class="box box-5">box-5 (width=3fr, height=2fr)</div>
+              <div class="box box-6">box-6 (width=150px, height=2fr)</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">
+              We have opportunity to use both of them to better control placement of elements.
+            </aside>
+          </section>
+          <section class="slide-3-7" data-auto-animate>
+            <div>2-7. Shortcut for grid templates</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                                 }
                               </code></pre>
-                        <!-- Note -->
-                        <aside class="notes">
-                            Imagine there is situation where you wish to add template with many columns or rows (for
-                            exapmle 5 or 10). You would write something like that and it will work but there is shorter
-                            form.
-                        </aside>
-                    </section>
-                    <section class="slide-3-7-2" data-auto-animate>
-                        <div>2-7. Shortcut for grid templates</div>
-                        <pre><code data-trim data-noescape>
+            <!-- Note -->
+            <aside class="notes">
+              Imagine there is situation where you wish to add template with many columns or rows (for exapmle 5 or 10).
+              You would write something like that and it will work but there is shorter form.
+            </aside>
+          </section>
+          <section class="slide-3-7-2" data-auto-animate>
+            <div>2-7. Shortcut for grid templates</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
                                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                                 }
                               </code></pre>
-                        <pre><code data-trim data-noescape>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
-                                grid-template-rows: repeat(10, 1fr)
+                                grid-template-rows: repeat(4, 50px)
                                 }
                               </code></pre>
-                        <!-- Note -->
-                        <aside class="notes">
-                            You may use function 'repeat' hat accept 2 arguments, The first one is number of columns,
-                            rows, and the second one is size. This form looks more readable and shorter.
-                        </aside>
-                    </section>
-                    <section class="slide-3-7">
-                        <div>2-7. Shortcut for grid templates</div>
-                        <pre><code data-trim data-noescape>
+            <!-- Note -->
+            <aside class="notes">
+              You may use function 'repeat' hat accept 2 arguments. The first one is number of columns, rows, and the
+              second one is size. This form looks more readable and shorter.
+            </aside>
+          </section>
+          <section class="slide-3-7">
+            <div>2-7. Shortcut for grid templates</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 display: grid;
-                                grid-template-rows: repeat(4, 1fr)
+                                grid-template-rows: repeat(4, 50px)
                                 }
                               </code></pre>
-                        <div class="container row-column">
-                            <div class="box box-1">box-1</div>
-                            <div class="box box-2">box-2</div>
-                            <div class="box box-3">box-3</div>
-                            <div class="box box-3">box-4</div>
-                            <div class="box box-3">box-5</div>
-                            <div class="box box-3">box-6</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">Empty</aside>
-                    </section>
-                    <section class="slide-3-8" style="font-size: 1.5rem">
-                        <div>2-8. Areas</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container repeat">
+              <div class="box box-1">box-1 (height=50px)</div>
+              <div class="box box-2">box-2 (height=50px)</div>
+              <div class="box box-3">box-3 (height=50px)</div>
+              <div class="box box-3">box-4 (height=50px)</div>
+              <div class="box box-3">box-5 (height=content)</div>
+              <div class="box box-3">box-6 (height=content)</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">Empty</aside>
+          </section>
+          <section class="slide-3-8" style="font-size: 1.5rem">
+            <div>2-8. Areas</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 grid-template-rows: 1fr 1fr 1fr;
                                 grid-template-areas:
@@ -275,26 +273,25 @@
                                 grid-area: third;
                             }
                               </code></pre>
-                        <div class="container areas">
-                            <div class="box box-1">box-1</div>
-                            <div class="box box-2">box-2</div>
-                            <div class="box box-3">box-3</div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            There is another way to place containers. It's grid-template-areas that specifies named grid
-                            areas. We create template with names of containers and we apply those names in each
-                            container that placed within main grid container. As we can see above we named 1,2 columns
-                            and 1,2 rows as 'first', then we apply this name for 'box-1' container using property
-                            'grid-area'. It means that container 'box-1' with property 'grid-area: first' take up 1,2
-                            columns and 1,2 rows. Container 'box-2' take up only 3 column and 1 row, and we see that 3
-                            column and 2 row is empty. It is because we put dot in this place accoroding to template.
-                            And the last container take up whole the third row.
-                        </aside>
-                    </section>
-                    <section class="slide-3-9" style="font-size: 1.5rem">
-                        <div>2-9. Alignment by vertical</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container areas">
+              <div class="box box-1">box-1</div>
+              <div class="box box-2">box-2</div>
+              <div class="box box-3">box-3</div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">
+              There is another way to place containers. It's grid-template-areas that specifies named grid areas. We
+              create template with names of containers and we apply those names in each container that placed within
+              main grid container. As we can see above we named 1,2 columns and 1,2 rows as 'first', then we apply this
+              name for 'box-1' container using property 'grid-area'. It means that container 'box-1' with property
+              'grid-area: first' take up 1,2 columns and 1,2 rows. Container 'box-2' take up only 3 column and 1 row,
+              and we see that 3 column and 2 row is empty. It is because we put dot in this place accoroding to
+              template. And the last container take up whole the third row.
+            </aside>
+          </section>
+          <section class="slide-3-9" style="font-size: 1.5rem">
+            <div>2-9. Alignment by vertical</div>
+            <pre><code data-trim data-noescape>
                             .container{
                                 display: grid;
                             }
@@ -312,21 +309,21 @@
                             }
                             
                               </code></pre>
-                        <div class="container align">
-                            <div class="box box-1"><div>start</div></div>
-                            <div class="box box-2"><div>end</div></div>
-                            <div class="box box-3"><div>center</div></div>
-                            <div class="box box-4"><div>stretch</div></div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            To align all items in box by vertical we use 'align-items' property for parent. If you want
-                            to align only one item, use 'align-self' for it.
-                        </aside>
-                    </section>
-                    <section class="slide-3-10" style="font-size: 1.5rem">
-                        <div>2-10. Alignment by horizontal</div>
-                        <pre><code data-trim data-noescape>
+            <div class="container align">
+              <div class="box box-1"><div>start</div></div>
+              <div class="box box-2"><div>end</div></div>
+              <div class="box box-3"><div>center</div></div>
+              <div class="box box-4"><div>stretch</div></div>
+            </div>
+            <!-- Note -->
+            <aside class="notes">
+              To align all items in box by vertical we use 'align-items' property for parent. If you want to align only
+              one item, use 'align-self' for it.
+            </aside>
+          </section>
+          <section class="slide-3-10" style="font-size: 1.5rem">
+            <div>2-10. Alignment by horizontal</div>
+            <pre><code data-trim data-noescape>
                             .container {
                                 border: 1px orange solid;
                                 display: grid;
@@ -344,57 +341,59 @@
                                 justify-self: stretch;
                             }
                               </code></pre>
-                        <div class="container horizontal">
-                            <div class="box box-1"><div>start</div></div>
-                            <div class="box box-2"><div>end</div></div>
-                            <div class="box box-3"><div>center</div></div>
-                            <div class="box box-4"><div>stretch</div></div>
-                        </div>
-                        <!-- Note -->
-                        <aside class="notes">
-                            And to align items by horyzontal we use 'justify-content' and "justify-self" for specific
-                            item.
-                        </aside>
-                    </section>
-                </section>
-                <section class="slide 4">
-                    <h2>4. Conclusion</h2>
-                    <section class="slide 4">
-                        <!-- Note -->
-                        <aside class="notes">
-                            In conclusion, CSS Grid is a powerful tool that simplifies the process of creating complex
-                            layouts on the web. With its flexibility and ease of use, it has become a popular choice
-                            among web developers
-                        </aside>
-                    </section>
-                    <section class="slide 4-2">
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
-                            >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout</a
-                        >
-                        <!-- Note -->
-                        <aside class="notes">
-                            If you wish to know more about grid layouts, you can follow the link. Here you learn more
-                            properties that simplify your developing and makes it interesting. 
-                        </aside>
-                    </section>
-                </section>
+            <div class="container horizontal">
+              <div class="box box-1"><div>start</div></div>
+              <div class="box box-2"><div>end</div></div>
+              <div class="box box-3"><div>center</div></div>
+              <div class="box box-4"><div>stretch</div></div>
             </div>
-        </div>
+            <!-- Note -->
+            <aside class="notes">
+              And to align items by horyzontal we use 'justify-content' and "justify-self" for specific item.
+            </aside>
+          </section>
+        </section>
+        <section class="slide 4">
+          <h2>4. Conclusion</h2>
+          <section class="slide 4">
+            <!-- Note -->
+            <aside class="notes">
+              In conclusion, CSS Grid is a powerful tool that simplifies the process of creating complex layouts on the
+              web. With its flexibility and ease of use, it has become a popular choice among web developers
+            </aside>
+          </section>
+          <section class="slide 4-2">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
+              >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout</a
+            >
+            <!-- Note -->
+            <aside class="notes">
+              I hope this presentation helped you to learn more about grid layouts. If you wish to know more about it,
+              you can follow the link. Here you learn more properties that simplify your developing and makes it
+              interesting also cover this topic much more.
+            </aside>
+          </section>
+        </section>
+        <section class="slide 5">
+          <h2>Happy coding!</h2>
+        </section>
+      </div>
+    </div>
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
-            Reveal.initialize({
-                hash: true,
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-                // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-            });
-        </script>
-    </body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
